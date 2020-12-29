@@ -994,7 +994,7 @@ const questions = [{
         ],
     },
     {
-        question: "링컨이 노예를 해방을 발표하자 남부 7주고 독립하였다.",
+        question: "링컨이 노예를 해방을 발표하자 남부 7주가 독립하였다.",
         answers: [
             { text: "O", correct: false },
             { text: "X", correct: true },
