@@ -15,9 +15,10 @@ const answerButtonsElement = document.getElementById("answer-buttons");
 let shuffledQuestion, currentQuestionIndex;
 
 const scoreText = document.getElementById("score");
+const timeText = document.querySelector(".timer_Text");
 var score = 0;
 var count = 0;
-
+var time = 15;
 var start_music = new Audio("start.mp3");
 var end_music = new Audio("end.mp3");
 
@@ -44,6 +45,27 @@ function setNextQuestion() {
     showQuestion(shuffledQuestion[currentQuestionIndex]);
 }
 
+function timer() {
+    const correctButton = document.querySelector(".corrects");
+    const wrongButton = document.querySelector(".wrongs");
+    var currentTime = Date.now();
+    var interval = setInterval(() => {
+        var thisTime = Date.now();
+        if (time > 0) {
+            time = 15 - Math.floor((thisTime - currentTime) / 1000);
+            timeText.innerText = String(time);
+        }
+
+        if (time < 2) {
+            correctButton.classList.add("hint");
+        }
+        if (time <= 0) {
+            X_audio.play();
+            selectAnswer(wrongButton);
+        }
+    }, 1000);
+}
+
 function showQuestion(question) {
     O_audio.pause();
     X_audio.pause();
@@ -56,11 +78,15 @@ function showQuestion(question) {
         button.classList.add("problems");
         if (answer.correct) {
             button.dataset.correct = answer.correct;
+            button.classList.add("corrects");
+        } else {
+            button.classList.add("wrongs");
         }
         button.addEventListener("click", selectAnswer);
         answerButtonsElement.appendChild(button);
         button.disabled = false;
     });
+    timer();
 }
 
 function resetState() {
@@ -76,6 +102,8 @@ function resetState() {
 }
 
 function selectAnswer(e) {
+    timeText.innerText = "15";
+    time = 15;
     X_audio.currentTime = 0;
     O_audio.currentTime = 0;
     var problems = document.getElementById("answer-buttons").childNodes;
@@ -1012,6 +1040,207 @@ const questions = [{
         answers: [
             { text: "O", correct: true },
             { text: "X", correct: false },
+        ],
+    },
+    {
+        question: "포켓몬스터 가이오가가 진화하면?",
+        answers: [
+            { text: "가이스오", correct: false },
+            { text: "가가이", correct: false },
+            { text: "없음", correct: true },
+        ],
+    },
+    {
+        question: "피카츄가 진화하면?",
+        answers: [
+            { text: "피츄", correct: false },
+            { text: "라이츄", correct: true },
+            { text: "없음", correct: false },
+        ],
+    },
+    {
+        question: "이브이가 진화하면 총 몇가지가 될 수 있을까?",
+        answers: [
+            { text: "6개", correct: false },
+            { text: "7개", correct: false },
+            { text: "8개", correct: true },
+        ],
+    },
+    {
+        question: "해리포터의 저자는?",
+        answers: [
+            { text: "JK롤링", correct: true },
+            { text: "JK롤링페이퍼", correct: false },
+            { text: "JOKE롤링", correct: false },
+        ],
+    },
+    {
+        question: "해리포터 시리즈는 몇 권일까?",
+        answers: [
+            { text: "6권", correct: false },
+            { text: "7권", correct: true },
+            { text: "8권", correct: false },
+        ],
+    },
+    {
+        question: "15소년 표류기에 나오는 소년의 수는?",
+        answers: [
+            { text: "15명", correct: true },
+            { text: "16명", correct: false },
+            { text: "17명", correct: false },
+        ],
+    },
+    {
+        question: "아이언맨 마크 1의 색깔은?",
+        answers: [
+            { text: "빨간색", correct: false },
+            { text: "파란색", correct: false },
+            { text: "회색", correct: true },
+        ],
+    },
+    {
+        question: "유성룡이 임진왜란때 쓴 글은?",
+        answers: [
+            { text: "백범일기", correct: false },
+            { text: "난중일기", correct: false },
+            { text: "징비록", correct: true },
+        ],
+    },
+    {
+        question: "세상에서 가장 유명한 프로그래밍 언어는?",
+        answers: [
+            { text: "파이썬", correct: true },
+            { text: "html", correct: false },
+            { text: "java", correct: false },
+        ],
+    },
+    {
+        question: "백설공주에서 여왕에게 백설공주가 가장 예쁘다고한 물건은?",
+        answers: [
+            { text: "신발", correct: false },
+            { text: "거울", correct: true },
+            { text: "사과", correct: false },
+        ],
+    },
+    {
+        question: "콜탄을 캐서 핸드폰을 만들때 필요한 광석은?",
+        answers: [
+            { text: "탄탈륨", correct: true },
+            { text: "다이아몬드", correct: false },
+            { text: "철광석", correct: false },
+        ],
+    },
+    {
+        question: "천연섬유가 아닌것은?",
+        answers: [
+            { text: "면", correct: false },
+            { text: "견", correct: false },
+            { text: "레이온", correct: true },
+        ],
+    },
+    {
+        question: "나홀로집에의 주인공은?",
+        answers: [
+            { text: "케빈", correct: true },
+            { text: "까비", correct: false },
+            { text: "코코", correct: false },
+        ],
+    },
+    {
+        question: "타노스가 얻은 마지막 스톤의 이름은?",
+        answers: [
+            { text: "파워스톤", correct: false },
+            { text: "소울스톤", correct: false },
+            { text: "마인드스톤", correct: true },
+        ],
+    },
+    {
+        question: "원소기호 B의 이름은?",
+        answers: [
+            { text: "베릴륨", correct: false },
+            { text: "바보", correct: false },
+            { text: "붕소", correct: true },
+        ],
+    },
+    {
+        question: "이세돌을 이긴 최초의 바둑 인공지능은?",
+        answers: [
+            { text: "GPT-3", correct: false },
+            { text: "알파고", correct: true },
+            { text: "tensorflow", correct: false },
+        ],
+    },
+    {
+        question: "알파고와 이세돌이 붙었을때 이세돌이 이긴 판은?",
+        answers: [
+            { text: "제2국", correct: false },
+            { text: "제3국", correct: false },
+            { text: "제4국", correct: true },
+        ],
+    },
+    {
+        question: "러시아가 속한 대륙은?",
+        answers: [
+            { text: "아시아", correct: true },
+            { text: "북아메리카", correct: false },
+            { text: "오세아니아", correct: false },
+        ],
+    },
+    {
+        question: "타지마할이 있는 나라는?",
+        answers: [
+            { text: "두바이", correct: false },
+            { text: "중국", correct: false },
+            { text: "인도", correct: true },
+            { text: "차도", correct: false },
+        ],
+    },
+    {
+        question: "지구의 배꼽이 있는 위치는?",
+        answers: [
+            { text: "오스트레일리아", correct: true },
+            { text: "중국", correct: false },
+            { text: "남극", correct: false },
+        ],
+    },
+    {
+        question: "임금님은 당나귀 라는 책에서 아폴론이 연주한 악기는?",
+        answers: [
+            { text: "피리", correct: false },
+            { text: "하프", correct: true },
+            { text: "바이올린", correct: false },
+        ],
+    },
+    {
+        question: "걸리버 여행기에서 주인공이 간 3번째 여행지는?",
+        answers: [
+            { text: "작은 사람들의 나라", correct: false },
+            { text: "큰 사람들의 나라", correct: false },
+            { text: "라퓨타", correct: true },
+            { text: "말들의 나라", correct: false },
+        ],
+    },
+    {
+        question: "셜록홈즈의 가장 친한 절친은?",
+        answers: [
+            { text: "왓슨", correct: true },
+            { text: "왓썹", correct: false },
+            { text: "왔서", correct: false },
+        ],
+    },
+    {
+        question: "아르키메데스가 유레카라고 외치게 된 과학원리는?",
+        answers: [
+            { text: "용해도", correct: false },
+            { text: "밀도", correct: true },
+            { text: "끓는점", correct: false },
+        ],
+    },
+    {
+        question: "용해도 차를 이용한 물질의 분해방법은?",
+        answers: [
+            { text: "석출", correct: true },
+            { text: "증류", correct: false },
         ],
     },
 ];

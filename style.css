@@ -66,11 +66,14 @@ body.wrong {
 
 .btn.correct {
     --hue: var(--hue-correct);
-    color: black;
 }
 
 .btn.wrong {
     --hue: var(--hue-wrong);
+}
+
+.btn.hint {
+    color: aqua
 }
 
 .start-btn,
@@ -122,4 +125,16 @@ h2 {
 
 .hidden {
     display: none;
+}
+
+.timer {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.timer_Text {
+    font-size: 30px;
 }
