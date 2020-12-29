@@ -405,7 +405,7 @@ const questions = [{
         ],
     },
     {
-        question: "다음산중 제이일 높은 산?",
+        question: "다음산중 두번째로 높은 산?",
         answers: [
             { text: "한라산", correct: false },
             { text: "지리산", correct: true },
@@ -514,6 +514,504 @@ const questions = [{
             { text: "얼음덩어리", correct: false },
             { text: "파이프 속 물", correct: false },
             { text: "특수 가스", correct: true },
+        ],
+    },
+    {
+        question: "조선의 제14대 왕입니다 고종과 함께 무능한 왕으로 알려졌으며, 재위 후반에 임진왜란이 발발하였습니다. 이 왕은?",
+        answers: [
+            { text: "인조", correct: false },
+            { text: "광해군", correct: false },
+            { text: "선조", correct: true },
+        ],
+    },
+    {
+        question: "조선 중기에 지었다고 하는 고전소설인 '홍길동전'의 저자는?",
+        answers: [
+            { text: "허균", correct: true },
+            { text: "허난설현", correct: false },
+            { text: "홍길동", correct: false },
+        ],
+    },
+    {
+        question: "이탈리아의 물리학자 및 천문학자. '그래도 지구는 돈다' 라는 명언을 남긴 이 인물은?",
+        answers: [
+            { text: "뉴턴", correct: false },
+            { text: "허블", correct: false },
+            { text: "갈릴레오 갈릴레이", correct: true },
+            { text: "갈릴레이 갈릴레오", correct: false },
+        ],
+    },
+    {
+        question: "노벨문학상을 수상한 미국의 소설가이자, 소설 '노인과 바다'의 저자는?",
+        answers: [
+            { text: "JK 롤링", correct: false },
+            { text: "허밍웨이", correct: true },
+            { text: "쥘 베른", correct: false },
+        ],
+    },
+    {
+        question: "음악의 아버지는 바흐입니다. 그렇다면 의학의 아버지는 누구일까요?",
+        answers: [
+            { text: "허준", correct: false },
+            { text: "히포크라테스", correct: true },
+        ],
+    },
+    {
+        question: "화폐가치가 하락하여 물가가 전반적·지속적으로 상승하는 경제적 현상은?",
+        answers: [
+            { text: "인플레이션", correct: true },
+            { text: "구제금융", correct: false },
+        ],
+    },
+    {
+        question: "삼국지에서 유비·관우·장비가 복숭아 밭에서 의형제를 맺은데서 비롯된 이 고사성어는?",
+        answers: [
+            { text: "인과응보", correct: false },
+            { text: "종두득두", correct: false },
+            { text: "도원결의", correct: true },
+        ],
+    },
+    {
+        question: "곤충의 몸통은 세 가지의 부분으로 나뉩니다. 이 세가지의 기준은?",
+        answers: [
+            { text: "머리, 배, 꼬리", correct: false },
+            { text: "머리, 가슴, 꼬리", correct: false },
+            { text: "머리, 가슴, 배", correct: true },
+        ],
+    },
+    {
+        question: "조선시대 서울에 설치했던 최고의 교육기관은?",
+        answers: [
+            { text: "규장각", correct: false },
+            { text: "성균관", correct: true },
+            { text: "경연", correct: false },
+        ],
+    },
+    {
+        question: "해커집단이 밝힌 전세계적으로 가장 흔하게 쓰인 최악의 패스워드는 무엇일까요? (6글자)",
+        answers: [
+            { text: "000000", correct: false },
+            { text: "123456", correct: true },
+        ],
+    },
+    {
+        question: "정식 명칭은 중앙공안정보기관. 1951년 총리 직속기관으로 설립된 이스라엘의 비밀정보기관은?",
+        answers: [
+            { text: "모사드", correct: true },
+            { text: "FBI", correct: false },
+            { text: "CIA", correct: false },
+        ],
+    },
+    {
+        question: "2차세계대전 당시에 연합군 최고사령관으로 노르망디 상륙작전을 총 지휘한 이 인물은?",
+        answers: [
+            { text: "맥아더", correct: false },
+            { text: "드와이트 아이젠하워", correct: true },
+        ],
+    },
+    {
+        question: "'하루라도 책을 읽지 않으면 입속에 가시다 돋는다'라는 명언을 남긴 우리나라 독립운동가는?",
+        answers: [
+            { text: "윤봉길", correct: false },
+            { text: "안중근", correct: true },
+            { text: "김구", correct: false },
+        ],
+    },
+    {
+        question: "숙종과 장희빈의 아들로 출생한 조선의 제 20대왕. 재위동안 노론, 소론 당쟁의 절정기였다.",
+        answers: [
+            { text: "숙종", correct: false },
+            { text: "철종", correct: false },
+            { text: "경종", correct: true },
+        ],
+    },
+    {
+        question: "수학의 아버지는 누구일까요?",
+        answers: [
+            { text: "피타고라스", correct: true },
+            { text: "가우스", correct: false },
+            { text: "유클리드", correct: false },
+        ],
+    },
+    {
+        question: "컴퓨터간에 정보를 주고 받을 때의 통신 방법에 대한 규칙과 약속. 통신의 규약을 의미하는 이것은?",
+        answers: [
+            { text: "네트워크", correct: false },
+            { text: "인터넷", correct: false },
+            { text: "프로토콜", correct: true },
+        ],
+    },
+    {
+        question: "고대 게르만족의 신으로, 던지기만 하면 반드시 적을 쓰러트린다는 '묠니르'라는 철퇴를 사용한다. 이 인물은?",
+        answers: [
+            { text: "토르", correct: true },
+            { text: "로키", correct: false },
+        ],
+    },
+    {
+        question: "1498년(연산군) 김일손 등 신진사류가 유자광 중심의 훈구파에게 화를 입은 사건.",
+        answers: [
+            { text: "갑자사화", correct: false },
+            { text: "기묘사화", correct: false },
+            { text: "무오사화", correct: true },
+        ],
+    },
+    {
+        question: "제우스와 세멜레 사이에서 태어난 아들로 로마신화에서는 바카스라고도 하며, 술의 신이라고 불리는 이 인물은?",
+        answers: [
+            { text: "디오니소스", correct: true },
+            { text: "아폴론", correct: false },
+        ],
+    },
+    {
+        question: "하드디스크 전문 업체인 웨스턴디지털이 지난 2015년 10월에 플래시 메모리 강자인 이 기업을 약 21조에 인수했다 이 기업은?",
+        answers: [
+            { text: "WD", correct: false },
+            { text: "샌디스크", correct: true },
+        ],
+    },
+    {
+        question: "척추동물의 적혈구 속에 있는 색소 단백질로 혈액이 붉은것은 적혈구 속 이것의 색깔 때문이다.",
+        answers: [
+            { text: "하모글로빈", correct: false },
+            { text: "케모글로빈", correct: false },
+            { text: "헤모글로빈", correct: true },
+        ],
+    },
+    {
+        question: "현실적으로는 아무데도 존재하지 않는 이상한 나라. 이상향을 가리키는 말로 꿈의 장소를 일컫는다.",
+        answers: [
+            { text: "라퓨타", correct: false },
+            { text: "유토피아", correct: true },
+            { text: "이상한 나라의 엘리스", correct: false },
+        ],
+    },
+    {
+        question: "해열·소염 진통제이자 혈전예방약으로 혈관 질환의 위험성을 감소시키는 목적으로 사용되는 이약은?",
+        answers: [
+            { text: "장티푸스", correct: false },
+            { text: "마약", correct: false },
+            { text: "아스피린", correct: true },
+        ],
+    },
+    {
+        question: "2017년 10월 인텔에서 공식 출시한 CPU 8세대 아키텍처의 코드명 이름은? ",
+        answers: [
+            { text: "커피레이크", correct: true },
+            { text: "아이스레이크", correct: false },
+        ],
+    },
+    {
+        question: "영국과 탈퇴를 뜻하는 합성어로 2016년 6월에 진행되었으며 영국의 유럽연합(EU) 탈퇴를 뜻하는 이 말은?",
+        answers: [
+            { text: "브로크시트", correct: false },
+            { text: "브렉시트", correct: true },
+        ],
+    },
+    {
+        question: "1871년(고종 8) 미국 아시아함대가 강화도에 쳐들어온 제국주의적 침략전쟁 사건.",
+        answers: [
+            { text: "신미양요", correct: true },
+            { text: "병인양요", correct: false },
+        ],
+    },
+    {
+        question: "이 바이러스를 가진 동물에 사람이 물렸을 때 발생되는 급성 뇌척수염으로 치사율 100%의 무서운 전염병이다.",
+        answers: [
+            { text: "코로나바이러스", correct: false },
+            { text: "심장마비", correct: false },
+            { text: "공수병", correct: true },
+        ],
+    },
+    {
+        question: "공공의 이익은 되지만 위험시설 등이 자기지역에 유치되는것을 반대하는 지역 이기주의현상.",
+        answers: [
+            { text: "님비현상", correct: true },
+            { text: "냄비현상", correct: false },
+        ],
+    },
+    {
+        question: " 말초 혈액내에 존재하며 혈액의 응고나 지혈작용에 관여하는 혈액의 유형성분인 이 혈구는?",
+        answers: [
+            { text: "백혈구", correct: false },
+            { text: "적혈구", correct: false },
+            { text: "혈소판", correct: true },
+        ],
+    },
+    {
+        question: " 체온조절의 이상증세로 열이나 감정적인 자극으로 인해 비정상적으로 땀이 많이 흐르는 이 질환은?",
+        answers: [
+            { text: "수련증", correct: false },
+            { text: "다한증", correct: true },
+        ],
+    },
+    {
+        question: "2019년도의 최저임금 <시급>은 얼마일까요?",
+        answers: [
+            { text: "8,330원", correct: false },
+            { text: "8,340원", correct: false },
+            { text: "8,350원", correct: true },
+        ],
+    },
+    {
+        question: "소화 효소와 호르몬을 분비하며, 위의 뒤쪽 부근에 위치해 있는 이 장기의 이름은?",
+        answers: [
+            { text: "이자", correct: true },
+            { text: "간", correct: false },
+            { text: "쓸개", correct: false },
+        ],
+    },
+    {
+        question: " 형광성 유기화합물에 전류를 흐르면 빛을 내는 전계발광현상을 이용하여 스스로 빛을 내는 이 자체발광형 유기물질은?",
+        answers: [
+            { text: "FHD", correct: false },
+            { text: "QHD", correct: false },
+            { text: "OLED", correct: true },
+        ],
+    },
+    {
+        question: "현대그룹의 창업자는?",
+        answers: [
+            { text: "이건희", correct: false },
+            { text: "이재용", correct: false },
+            { text: "정주영", correct: true },
+        ],
+    },
+    {
+        question: "다양한 기관, 효소, 호르몬 등 신체를 이루는 주 성분으로 몸에서 물 다음으로 많은 이 것은?",
+        answers: [
+            { text: "탄수화물", correct: false },
+            { text: "단백질", correct: true },
+            { text: "지방", correct: false },
+        ],
+    },
+    {
+        question: "신경 말단에서 근육수축을 일으키는 신경전달 물질을 억제하여 잔주름을 없애는 이 물질은?",
+        answers: [
+            { text: "성형수술", correct: false },
+            { text: "보톡스", correct: true },
+        ],
+    },
+    {
+        question: "다음 중에서 <부치는> 것은?",
+        answers: [
+            { text: "우표", correct: false },
+            { text: "짐", correct: true },
+            { text: "밥풀", correct: false },
+        ],
+    },
+    {
+        question: "삼겹살은 황사예방 등 먼지제거에 좋은 음식이다.",
+        answers: [
+            { text: "O", correct: false },
+            { text: "X", correct: true },
+        ],
+    },
+    {
+        question: "<정글북>의 주인공은?",
+        answers: [
+            { text: "아시아인", correct: true },
+            { text: "유럽인", correct: false },
+            { text: "아메리카인", correct: false },
+        ],
+    },
+    {
+        question: "중심 도시의 주변에서 주거지 역할을 하는 도시를 무엇이라고 하는가?",
+        answers: [
+            { text: "베드타운", correct: true },
+            { text: "신도시", correct: false },
+            { text: "위성도시", correct: false },
+            { text: "우보도시", correct: false },
+        ],
+    },
+    {
+        question: "세계 최초로 안락사를 합법화한 나라는?",
+        answers: [
+            { text: "미국", correct: false },
+            { text: "영국", correct: false },
+            { text: "네덜란드", correct: true },
+            { text: "스위스", correct: false },
+        ],
+    },
+    {
+        question: "자본과 노동에 대한 국가의 통제 방식을 일컫는 말은?",
+        answers: [
+            { text: "코포라티즘", correct: true },
+            { text: "컴슈머리즘", correct: false },
+            { text: "자기조합주의", correct: false },
+            { text: "경제주의", correct: false },
+        ],
+    },
+    {
+        question: "헤일로 효과를 방지하기 위해서 배제해야 할 것이 아닌것은?",
+        answers: [
+            { text: "편견", correct: false },
+            { text: "선입관", correct: false },
+            { text: "강박 관념", correct: true },
+            { text: "고정 관념", correct: false },
+        ],
+    },
+    {
+        question: "소음 측정 단위는 어느것인가?",
+        answers: [
+            { text: "dB", correct: true },
+            { text: "ppm", correct: false },
+            { text: "BOD", correct: false },
+            { text: "COD", correct: false },
+        ],
+    },
+    {
+        question: "대기층에서 더운 공기 때문에 그 아래로 찬 공기가 누적해서 나타나는 것은?",
+        answers: [
+            { text: "온실효과", correct: false },
+            { text: "황사현상", correct: false },
+            { text: "스모그현상", correct: false },
+            { text: "역전층현상", correct: true },
+        ],
+    },
+    {
+        question: "신기술의 우수한 상품에 매겨지는 마크는?",
+        answers: [
+            { text: "GD", correct: false },
+            { text: "품", correct: false },
+            { text: "KT", correct: true },
+            { text: "KS", correct: false },
+        ],
+    },
+    {
+        question: "환경보전을 위한 다자간 협상을 무엇이라 하는가?",
+        answers: [
+            { text: "그린피스", correct: false },
+            { text: "녹색운동", correct: false },
+            { text: "그린라운드", correct: true },
+            { text: "로마클럽", correct: false },
+        ],
+    },
+    {
+        question: "우리나라의 자유무역 협정 첫 대상국은?",
+        answers: [
+            { text: "일본", correct: false },
+            { text: "칠레", correct: true },
+            { text: "멕시코", correct: false },
+            { text: "브라질", correct: false },
+        ],
+    },
+    {
+        question: "수자원 보전 지역으로 연안의 수자원을 오염으로 부터 보존하기 위해 설정한 오염제한 구역을 무엇이라고 하는가 ? ",
+        answers: [
+            { text: "그린벨트", correct: false },
+            { text: "폐쇄성 수역", correct: false },
+            { text: "블루벨트", correct: true },
+        ],
+    },
+    {
+        question: "친고죄는?",
+        answers: [
+            { text: "절도죄", correct: false },
+            { text: "모욕죄", correct: true },
+            { text: "횡령죄", correct: false },
+            { text: "재물 훼손죄", correct: false },
+        ],
+    },
+    {
+        question: "마카오가 중국으로 반환된 시기는?",
+        answers: [
+            { text: "1998", correct: false },
+            { text: "1999", correct: true },
+            { text: "2000", correct: false },
+        ],
+    },
+    {
+        question: "북유럽 신화에서는 최고신 오딘에게 세상 동정을 알려주고, 아랍세계에서는 날아가는 방향을 통해 좋은 징조와 나쁜 조짐을 알려주는 것으로 유명한 동물은?",
+        answers: [
+            { text: "비둘기", correct: false },
+            { text: "까마귀", correct: true },
+            { text: "독수리", correct: false },
+            { text: "까치", correct: false },
+        ],
+    },
+    {
+        question: "위진 남북조 시기에 고개지의 여사잠도 도연명의 귀거래사를 볼 수있었다.",
+        answers: [
+            { text: "O", correct: true },
+            { text: "X", correct: false },
+        ],
+    },
+    {
+        question: "원나라때 홍루몽 유림외사등을 볼 수 있었다.",
+        answers: [
+            { text: "O", correct: false },
+            { text: "X", correct: true },
+        ],
+    },
+    {
+        question: "당나라 때는 불교가 선종 정토종 등이 등장하여 중국화되었다.",
+        answers: [
+            { text: "O", correct: true },
+            { text: "X", correct: false },
+        ],
+    },
+    {
+        question: "금나라에게 패하여 임안으로 천도한 남송에서 왕안석이 계속되는 세폐문제등을 해결하고자 개혁을 주장하였다.",
+        answers: [
+            { text: "O", correct: false },
+            { text: "X", correct: true },
+        ],
+    },
+    {
+        question: "영국 스튜어트 왕조시기에 내각 책임제가 도입되엇다(기출)",
+        answers: [
+            { text: "O", correct: false },
+            { text: "X", correct: true },
+        ],
+    },
+    {
+        question: "명에혁명 시기에 토리당 휘그당이라는 정당이 발생하고 심사법 인신 보호법 등이 제정되었다.",
+        answers: [
+            { text: "O", correct: false },
+            { text: "X", correct: true },
+        ],
+    },
+    {
+        question: "러시아의 알렉산드로 2세는 데카브르스트의 난을 진압하였다.",
+        answers: [
+            { text: "O", correct: false },
+            { text: "X", correct: true },
+        ],
+    },
+    {
+        question: "프랑스 7월 혁명의 결과 영국의 1차 선거법 개정에 영향을 주엇다.",
+        answers: [
+            { text: "O", correct: true },
+            { text: "X", correct: false },
+        ],
+    },
+    {
+        question: "아바스 왕조는 바그다드에 도읍을 두고 당과 탈라스 전투를 하였으며 시아파의 후원으로 성립하였다. ",
+        answers: [
+            { text: "O", correct: true },
+            { text: "X", correct: false },
+        ],
+    },
+    {
+        question: "링컨이 노예를 해방을 발표하자 남부 7주고 독립하였다.",
+        answers: [
+            { text: "O", correct: false },
+            { text: "X", correct: true },
+        ],
+    },
+    {
+        question: "후스 위클리프등이 교회의 대분열 시기를 틈타 교회를 비판하자 트리엔트 공의회를 개최하고 예수회등을 설립하여 대응하고자하였다. ",
+        answers: [
+            { text: "O", correct: false },
+            { text: "X", correct: true },
+        ],
+    },
+    {
+        question: " 미국은 남북전쟁 통일후에 대륙횡단 철도를 완성하여 자본주의의 급속한 발전을 이루었다. ",
+        answers: [
+            { text: "O", correct: true },
+            { text: "X", correct: false },
         ],
     },
 ];
