@@ -18,7 +18,17 @@ const scoreText = document.getElementById("score");
 var score = 0;
 var count = 0;
 
+var start_music = new Audio("start.mp3");
+var end_music = new Audio("end.mp3");
+
+var O_audio = new Audio("O.mp3");
+var X_audio = new Audio("X.mp3");
+
 function startGame() {
+    start_music.currentTime = 0;
+    end_music.currentTime = 0;
+    start_music.play();
+    end_music.pause();
     score = 0;
     scoreText.innerText = String(score);
     title.classList.add("hide");
@@ -35,6 +45,8 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
+    O_audio.pause();
+    X_audio.pause();
     count++;
     questionElement.innerText = question.question;
     question.answers.forEach((answer) => {
@@ -52,6 +64,7 @@ function showQuestion(question) {
 }
 
 function resetState() {
+    start_music.play();
     clearStatusClass(document.body);
 
     nextButton.classList.add("hide");
@@ -63,6 +76,8 @@ function resetState() {
 }
 
 function selectAnswer(e) {
+    X_audio.currentTime = 0;
+    O_audio.currentTime = 0;
     var problems = document.getElementById("answer-buttons").childNodes;
     for (var i = 0; i < problems.length; i++) {
         problems[i].disabled = true;
@@ -72,6 +87,10 @@ function selectAnswer(e) {
     if (correct) {
         score += 1;
         scoreText.innerText = String(score);
+
+        O_audio.play();
+    } else {
+        X_audio.play();
     }
     setStatusClass(document.body, correct);
     Array.from(answerButtonsElement.children).forEach((button) => {
@@ -84,6 +103,8 @@ function selectAnswer(e) {
         startButton.innerText = "Restart";
         startButton.classList.remove("hide");
         gotoButton.classList.remove("hide");
+        start_music.pause();
+        end_music.play();
     }
 }
 
@@ -227,7 +248,7 @@ const questions = [{
             { text: "이스라엘", correct: false },
             { text: "서울", correct: false },
             { text: "카이로", correct: false },
-            { text: "예수살렘", correct: true },
+            { text: "예루살렘", correct: true },
         ],
     },
     {
