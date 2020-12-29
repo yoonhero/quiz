@@ -31,7 +31,7 @@ function startGame() {
     start_music.play();
     end_music.pause();
     score = 0;
-    scoreText.innerText = String(score);
+    //scoreText.innerText = String(score);
     title.classList.add("hide");
     startButton.classList.add("hide");
     shuffledQuestion = questions.sort(() => Math.random() - 0.5);
@@ -49,7 +49,7 @@ function timer() {
     const correctButton = document.querySelector(".corrects");
     const wrongButton = document.querySelector(".wrongs");
     var currentTime = Date.now();
-    var interval = setInterval(() => {
+    /*var interval = setInterval(() => {
         var thisTime = Date.now();
         if (time > 0) {
             time = 15 - Math.floor((thisTime - currentTime) / 1000);
@@ -63,7 +63,7 @@ function timer() {
             X_audio.play();
             selectAnswer(wrongButton);
         }
-    }, 1000);
+    }, 1000);*/
 }
 
 function showQuestion(question) {
@@ -102,7 +102,7 @@ function resetState() {
 }
 
 function selectAnswer(e) {
-    timeText.innerText = "15";
+    //timeText.innerText = "15";
     time = 15;
     X_audio.currentTime = 0;
     O_audio.currentTime = 0;
