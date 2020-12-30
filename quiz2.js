@@ -104,6 +104,16 @@ function confirmAnswer() {
         X_audio.play();
         setStatusClass(document.body, false);
     }
+    if (count < 5) {
+        nextHardButton.classList.remove("hide");
+    } else {
+        count = 0;
+        startButtonHard.innerText = "Restart";
+        startButtonHard.classList.remove("hide");
+        gotoButton.classList.remove("hide");
+        start_music.pause();
+        end_music.play();
+    }
 }
 
 function showHardQuestion(question) {
