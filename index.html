@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
+    <link rel="stylesheet" href="./input.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./input.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico">
@@ -25,15 +27,23 @@
         <div id="question-container" class="hide">
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div id="hard-question-container" class="hide">
+            <div id="hardquestion">Question</div>
+            <h4 id="hints-container" class="hide"><span>초성: </span><span id="hints"></span></h4>
+            <div class="textinput">
+                <div class="js-toDoForm input_div">
+                    <input id='value' type="text" placeholder="답을 입력해주세요" />
+                </div>
+                <button id="btn-ok" class="btn">확인</button>
             </div>
         </div>
         <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="start-btn-easy" class="start-btn btn">객관식</button>
+            <button id="start-btn-hard" class="start-btn btn">주관식</button>
             <button id="next-btn" class="next-btn btn hide">Next</button>
+            <button id="hard-next-btn" class="next-btn btn hide">Next</button>
             <button id="goTo" class="goto-btn btn hide"><a href="http://time-timer.netlify.app">TimeTimer</a></button>
         </div>
 
@@ -54,6 +64,7 @@
 
     <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     <script src="./script.js"></script>
+    <script src="./quiz2.js"></script>
     <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
     <script type="text/javascript">
         if (!wcs_add) var wcs_add = {};

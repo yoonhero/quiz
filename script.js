@@ -1,4 +1,5 @@
-const startButton = document.getElementById("start-btn");
+const startButton = document.getElementById("start-btn-easy");
+const startButtonHard = document.getElementById("start-btn-hard");
 const nextButton = document.getElementById("next-btn");
 const gotoButton = document.getElementById("goTo");
 const title = document.getElementById("title");
@@ -27,6 +28,7 @@ var X_audio = new Audio("X.mp3");
 var clock_audio = new Audio("clock.wav");
 
 function startGame() {
+    startButtonHard.classList.add("hide");
     start_music.currentTime = 0;
     end_music.currentTime = 0;
     start_music.play();

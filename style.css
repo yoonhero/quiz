@@ -104,7 +104,8 @@ h2 {
     color: gray;
 }
 
-#question {
+#question,
+#hardquestion {
     font-size: 30px;
 }
 
