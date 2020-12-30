@@ -18,12 +18,13 @@ const scoreText = document.getElementById("score");
 const timeText = document.querySelector(".timer_Text");
 var score = 0;
 var count = 0;
-var time = 15;
+var time = 10;
 var start_music = new Audio("start.mp3");
 var end_music = new Audio("end.mp3");
 
 var O_audio = new Audio("O.mp3");
 var X_audio = new Audio("X.mp3");
+var clock_audio = new Audio("clock.wav");
 
 function startGame() {
     start_music.currentTime = 0;
@@ -31,7 +32,7 @@ function startGame() {
     start_music.play();
     end_music.pause();
     score = 0;
-    //scoreText.innerText = String(score);
+    scoreText.innerText = String(score);
     title.classList.add("hide");
     startButton.classList.add("hide");
     shuffledQuestion = questions.sort(() => Math.random() - 0.5);
@@ -49,10 +50,12 @@ function timer() {
     const correctButton = document.querySelector(".corrects");
     const wrongButton = document.querySelector(".wrongs");
     var currentTime = Date.now();
-    /*var interval = setInterval(() => {
+    interval = setInterval(() => {
+        clock_audio.currentTime = 0;
+        clock_audio.play();
         var thisTime = Date.now();
         if (time > 0) {
-            time = 15 - Math.floor((thisTime - currentTime) / 1000);
+            time = 10 - Math.floor((thisTime - currentTime) / 1000);
             timeText.innerText = String(time);
         }
 
@@ -60,10 +63,23 @@ function timer() {
             correctButton.classList.add("hint");
         }
         if (time <= 0) {
+            clock_audio.pause();
+            time = 10;
             X_audio.play();
-            selectAnswer(wrongButton);
+            clearInterval(interval);
+            setStatusClass(document.body, false);
+            if (count < 5) {
+                nextButton.classList.remove("hide");
+            } else {
+                count = 0;
+                startButton.innerText = "Restart";
+                startButton.classList.remove("hide");
+                gotoButton.classList.remove("hide");
+                start_music.pause();
+                end_music.play();
+            }
         }
-    }, 1000);*/
+    }, 1000);
 }
 
 function showQuestion(question) {
@@ -90,6 +106,8 @@ function showQuestion(question) {
 }
 
 function resetState() {
+    time = 10;
+    timeText.innerText = String(time);
     start_music.play();
     clearStatusClass(document.body);
 
@@ -102,8 +120,10 @@ function resetState() {
 }
 
 function selectAnswer(e) {
-    //timeText.innerText = "15";
-    time = 15;
+    clock_audio.pause();
+    clearInterval(interval);
+    timeText.innerText = "10";
+    time = 10;
     X_audio.currentTime = 0;
     O_audio.currentTime = 0;
     var problems = document.getElementById("answer-buttons").childNodes;
