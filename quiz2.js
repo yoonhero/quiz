@@ -19,7 +19,7 @@ const answer_container = document.getElementById("answer-container");
 const answerText = document.getElementById("answer-text");
 var score = 0;
 var count = 0;
-var time = 10;
+var time = 20;
 var start_music = new Audio("start.mp3");
 var end_music = new Audio("end.mp3");
 
@@ -59,7 +59,7 @@ function settimer() {
         clock_audio.play();
         var thisTime = Date.now();
         if (time > 0) {
-            time = 10 - Math.floor((thisTime - currentTime) / 1000);
+            time = 20 - Math.floor((thisTime - currentTime) / 1000);
             timeText.innerText = String(time);
         }
 
@@ -73,7 +73,7 @@ function settimer() {
                 shuffledQuestion[currentQuestionIndex].answer;
             count++;
             clock_audio.pause();
-            time = 10;
+            time = 20;
             OKbutton.classList.add("hide");
             X_audio.play();
             clearInterval(interval);
@@ -138,7 +138,7 @@ function showHardQuestion(question) {
 }
 
 function HardresetState() {
-    time = 10;
+    time = 20;
     timeText.innerText = String(time);
     start_music.play();
     clearStatusClass(document.body);
