@@ -113,6 +113,8 @@ function confirmAnswer() {
 }
 
 function showHardQuestion(question) {
+    X_audio.currentTime = 0;
+    O_audio.currentTime = 0;
     scoreText.innerText = String(score);
     hints_container.classList.add("hide");
     OKbutton.classList.remove("hide");
