@@ -15,6 +15,8 @@ gotoButton.classList.add("hide");
 const hintsText = document.getElementById("hints");
 const hints_container = document.getElementById("hints-container");
 const inputText = document.getElementById("value");
+const answer_container = document.getElementById("answer-container");
+const answerText = document.getElementById("answer-text");
 var score = 0;
 var count = 0;
 var time = 10;
@@ -66,6 +68,9 @@ function settimer() {
             hintsText.innerText = shuffledQuestion[currentQuestionIndex].hints;
         }
         if (time <= 0) {
+            answer_container.classList.remove("hide");
+            answerText.innerText =
+                shuffledQuestion[currentQuestionIndex].answer;
             count++;
             clock_audio.pause();
             time = 10;
@@ -95,6 +100,8 @@ function confirmAnswer() {
     clearInterval(interval);
     const value = document.getElementById("value").value;
     inputText.value = "";
+    answer_container.classList.remove("hide");
+    answerText.innerText = shuffledQuestion[currentQuestionIndex].answer;
     if (value == shuffledQuestion[currentQuestionIndex].answer) {
         setStatusClass(document.body, true);
         O_audio.play();
@@ -117,6 +124,7 @@ function confirmAnswer() {
 }
 
 function showHardQuestion(question) {
+    answer_container.classList.add("hide");
     X_audio.currentTime = 0;
     O_audio.currentTime = 0;
     scoreText.innerText = String(score);
