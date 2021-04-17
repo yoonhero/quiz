@@ -415,6 +415,306 @@ const questions = [
       { text: "청 상인의 내륙 활동 허용", correct: false },
     ],
   },
+  {
+    question: "온건 개화파의 개혁모델은?",
+    answers: [
+      { text: "양무운동", correct: true },
+      { text: "메이지유신", correct: false },
+    ],
+  },
+  {
+    question: "급진개화파의 개혁모델은?",
+    answers: [
+      { text: "메이지유신", correct: true },
+      { text: "양무운동", correct: false },
+    ],
+  },
+  {
+    question: "급진개화파의 대표인물이 아닌 것은?",
+    answers: [
+      { text: "김홍집", correct: true },
+      { text: "김옥균", correct: false },
+      { text: "박영효", correct: false },
+      { text: "서광범", correct: false },
+    ],
+  },
+  {
+    question: "갑신정변 셋째 날에 발표한 개혁정강의 내용 중 틀린 내용은?",
+    answers: [
+      { text: "토지분배 개혁을 실시", correct: true },
+      { text: "청에 조공하는 허례를 폐지", correct: false },
+      { text: "문벌 폐지하며 평등의 권리 확립", correct: false },
+      { text: "지조법 개혁하고 재정을 모두 호조에서 관할", correct: false },
+    ],
+  },
+  {
+    question: "갑신정변 이후 맺어진 조약이 아닌 것은?",
+    answers: [
+      { text: "제물포조약", correct: true },
+      { text: "톈진조약", correct: false },
+      { text: "한성조약", correct: false },
+    ],
+  },
+  {
+    question: "영국이 러시아를 견제하기 위해서 벌인 사건은?",
+    answers: [
+      { text: "거문도사건", correct: true },
+      { text: "하얀도사건", correct: false },
+      { text: "빨간도사건", correct: false },
+      { text: "제주도사건", correct: false },
+    ],
+  },
+  {
+    question: "곡물의 유출을 금지하는 명령은?",
+    answers: [
+      { text: "방곡령", correct: true },
+      { text: "곡물령", correct: false },
+      { text: "금지령", correct: false },
+      { text: "반대령", correct: false },
+    ],
+  },
+  {
+    question: "최제우의 죄를 벗겨주자는 운동은?",
+    answers: [
+      { text: "교조 신원 운동", correct: true },
+      { text: "동학 농민 운동", correct: false },
+      { text: "농민 봉기", correct: false },
+    ],
+  },
+  {
+    question: "1차 농민 봉기의 성격",
+    answers: [
+      { text: "반봉건", correct: true },
+      { text: "반외세", correct: false },
+    ],
+  },
+  {
+    question: "2차 농민 봉기의 성격",
+    answers: [
+      { text: "반외세", correct: true },
+      { text: "반봉건", correct: false },
+    ],
+  },
+  {
+    question:
+      "고부를 점령하고 [  ]에서 집결해 농민군을 확대 개펀해 전투력이 상승했다",
+    answers: [
+      { text: "백산", correct: true },
+      { text: "흑산", correct: false },
+      { text: "한라산", correct: false },
+      { text: "백두산", correct: false },
+    ],
+  },
+  {
+    question: "황토현 전투 -> [  ] -> 전주성 점령",
+    answers: [
+      { text: "황룡천 전투", correct: true },
+      { text: "우금치 전투", correct: false },
+      { text: "청 일 전쟁", correct: false },
+    ],
+  },
+  {
+    question: "전주 화약 후 호남지방 일대에서 실시한 개혁은?",
+    answers: [
+      { text: "폐정개혁", correct: true },
+      { text: "개혁정강 14개조", correct: false },
+      { text: "광무개혁", correct: false },
+      { text: "갑오개혁", correct: false },
+    ],
+  },
+  {
+    question: "동학농민운동군이 패배한 전투는?",
+    answers: [
+      { text: "우금치전투", correct: true },
+      { text: "황룡천전투", correct: false },
+      { text: "황토현전투", correct: false },
+    ],
+  },
+  {
+    question:
+      "전주화약후 동학 농민군이 제시한 폐정개혁안 내용중 옳지 않은 것은?",
+    answers: [
+      { text: "왜적과 친하게 지낼것", correct: true },
+      { text: "토지를 균등히 나누어 경작하게 할것", correct: false },
+      { text: "젊은 과부의 재가를 허용할것", correct: false },
+      { text: "노비문서를 불태워버릴것", correct: false },
+    ],
+  },
+  {
+    question: "동학농민운동 이후 정부의 자주 개혁 기구는?",
+    answers: [
+      { text: "교정청", correct: true },
+      { text: "군국기무처", correct: false },
+      { text: "별기군", correct: false },
+    ],
+  },
+  {
+    question: "1차 갑오개혁 내용중 옳지 않은것은?",
+    answers: [
+      { text: "재판소 설치해 사법권을 분리", correct: true },
+      { text: "왕실과 정부의 사무 분리", correct: false },
+      { text: "과거제 폐지", correct: false },
+      { text: "신분제 폐지", correct: false },
+    ],
+  },
+  {
+    question: "1차 갑오개혁 내용중 옳지 않은것은?",
+    answers: [
+      { text: "교육입국조서 발표", correct: true },
+      { text: "과부의 재가 허용", correct: false },
+      { text: "고문과 연좌제 폐지", correct: false },
+      { text: "국가 재정 일원화 & 조세를 돈으로 납부", correct: false },
+    ],
+  },
+  {
+    question: "2차 갑오개혁 내용중 옳지 않은것은?",
+    answers: [
+      { text: "군국기무처 설치", correct: true },
+      { text: "홍범 14조 반포", correct: false },
+      { text: "재판소 설치", correct: false },
+      { text: "지방 23부 개편", correct: false },
+    ],
+  },
+  {
+    question: "홍범 14조 내용 중 옳지 않은것은?",
+    answers: [
+      { text: "청에 의존한다", correct: true },
+      { text: "왕실과 정부 사무를 분리한다.", correct: false },
+      { text: "조세를 탁지아문에서 관할한다.", correct: false },
+      {
+        text:
+          "조세는 법률이 정한 율에 따르며, 명목을 더해 징수하는 것을 금한다.",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question:
+      "청일전쟁에서 일본이 승리하고 일어난 삼국간섭에 해당하지 않는 나라는?",
+    answers: [
+      { text: "미국", correct: true },
+      { text: "러시아", correct: false },
+      { text: "독일", correct: false },
+      { text: "프랑스", correct: false },
+    ],
+  },
+  {
+    question: "을미개혁 개혁 내용이 아닌것은?",
+    answers: [
+      { text: "연호 '광무' 사용", correct: true },
+      { text: "단발령실시", correct: false },
+      { text: "태양력사용", correct: false },
+      { text: "종두법시행", correct: false },
+    ],
+  },
+  {
+    question: "을미사변과 단발령으로 일어난 의병은?",
+    answers: [
+      { text: "을미의병", correct: true },
+      { text: "정미의병", correct: false },
+      { text: "단발의병", correct: false },
+    ],
+  },
+  {
+    question: "갑오 을미 개혁의 한계 중 옳지 않은 것은?",
+    answers: [
+      {
+        text: "개화파의 의지와 동학농민군의 요구가 받아들여지지 않음",
+        correct: true,
+      },
+      { text: "개혁 주도 세력이 일본에 의존", correct: false },
+      { text: "군사 개혁에 소홀", correct: false },
+      { text: "토지 제도 개혁이 제외됨", correct: false },
+    ],
+  },
+  {
+    question: "독립신문을 발간한 사람은?",
+    answers: [
+      { text: "서재필", correct: true },
+      { text: "김옥균", correct: false },
+      { text: "최익현", correct: false },
+      { text: "고종", correct: false },
+    ],
+  },
+  {
+    question: "독립신문은 한글판 영문판을 발행했다",
+    answers: [
+      { text: "O", correct: true },
+      { text: "X", correct: false },
+    ],
+  },
+  {
+    question: "독립협회 활동 중 옳지 않은것은?",
+    answers: [
+      { text: "항일의병운동", correct: true },
+      { text: "독립문 독립관 건립", correct: false },
+      { text: "의회 설립 운동", correct: false },
+      { text: "토론회 강연회 개최", correct: false },
+    ],
+  },
+  {
+    question: "독립협회 목표중 옳지 않은 것은?",
+    answers: [
+      { text: "열강 지배 운동", correct: true },
+      { text: "자주 독립 운동", correct: false },
+      { text: "자강 개혁 운동", correct: false },
+      { text: "자유 민권 운동", correct: false },
+    ],
+  },
+  {
+    question: "관민공동회 결과 맺어진 조약은?",
+    answers: [
+      { text: "헌의 6조", correct: true },
+      { text: "제물포 조약", correct: false },
+      { text: "허니 6조", correct: false },
+      { text: "꿀 6조", correct: false },
+    ],
+  },
+  {
+    question: "대한국 국제의 내용은?",
+    answers: [
+      { text: "황제의 전제권 강조", correct: true },
+      { text: "황제 권한 약화", correct: false },
+      { text: "황제 퇴임", correct: false },
+      { text: "의회제 설립", correct: false },
+    ],
+  },
+  {
+    question: "광무개혁의 원칙은?",
+    answers: [
+      { text: "구본신참", correct: true },
+      { text: "신본구참", correct: false },
+      { text: "구참신참", correct: false },
+      { text: "구본신본", correct: false },
+    ],
+  },
+  {
+    question: "광무개혁에서 황제가 군대를 통솔하기 위해 세운 기구는?",
+    answers: [
+      { text: "원수부", correct: true },
+      { text: "별기군", correct: false },
+      { text: "5군영", correct: false },
+      { text: "삼군부", correct: false },
+    ],
+  },
+  {
+    question: "광무개혁에서 양전 사업을 실시하고 [ ]을/를 발행",
+    answers: [
+      { text: "지계", correct: true },
+      { text: "토지문서", correct: false },
+      { text: "지서", correct: false },
+      { text: "주민등록본", correct: false },
+    ],
+  },
+  {
+    question: "광무개혁의 의의 중 옳지 않은 것은?",
+    answers: [
+      { text: "민권을 보장했다", correct: true },
+      { text: "자주독립과 근대화를 지향했다", correct: false },
+      { text: "외세의 간섭을 배제하고자 한 자주적 개혁이다", correct: false },
+      { text: "산업 교육 근대 시설을 확충했다", correct: false },
+    ],
+  },
 ];
 
 // const questions = [{
