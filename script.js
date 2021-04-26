@@ -71,7 +71,7 @@ function timer() {
       X_audio.play();
       clearInterval(interval);
       setStatusClass(document.body, false);
-      if (count < 5) {
+      if (count < 15) {
         nextButton.classList.remove("hide");
       } else {
         startButton.innerText = "Restart";
@@ -177,7 +177,7 @@ function selectAnswer(e) {
   Array.from(answerButtonsElement.children).forEach((button) => {
     setStatusClass(button, button.dataset.correct);
   });
-  if (count < 5) {
+  if (count < 15) {
     nextButton.classList.remove("hide");
   } else {
     count = 0;
